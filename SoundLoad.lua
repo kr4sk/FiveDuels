@@ -17,7 +17,7 @@ if not isfolder("KrFiveDuels/song") then
 end
 if not isfile("KrFiveDuels/song/ransom.wav") then
     game.StarterGui:SetCore("SendNotification", {
-		Title = "Creating ransom.wav folder"; 
+		Title = "Creating ransom.wav song"; 
 		Text = "";
 		Icon = "";  
 	})
@@ -25,9 +25,17 @@ if not isfile("KrFiveDuels/song/ransom.wav") then
 end
 if not isfile("KrFiveDuels/song/Kurxxed.wav") then
     game.StarterGui:SetCore("SendNotification", {
-		Title = "Creating Kurxxed.wav folder"; 
+		Title = "Creating Kurxxed.wav song"; 
 		Text = "";
 		Icon = "";  
 	})
     writefile("KrFiveDuels/song/Kurxxed.wav", game:HttpGet("https://github.com/kr4sk/FiveDuels/blob/main/Kurxxed.wav?raw=true")) -- https://www.youtube.com/watch?v=-DENhuNNkK4
+end
+if not isfile("KrFiveDuels/song/onthatline.mp3") then
+    game.StarterGui:SetCore("SendNotification", {
+		Title = "Creating onthatline.mp3 song"; 
+		Text = "";
+		Icon = "";  
+	})
+    writefile("KrFiveDuels/song/onthatline.mp3", game:HttpGet("https://github.com/kr4sk/FiveDuels/blob/main/onthatline.mp3?raw=true")) -- https://www.youtube.com/watch?v=-DENhuNNkK4
 end
